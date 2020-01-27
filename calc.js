@@ -52,7 +52,7 @@ function processMultiple() {
 function processDivide() {
 	let secondNumber = parseFloat(display.value);
 	if (secondNumber === 0) {
-		display.value = "Error";
+		display.value = "You can't devide by Zero";
 	} else {
 	display.value = parseFloat(firstNumber) / parseFloat(display.value);
 	}		
