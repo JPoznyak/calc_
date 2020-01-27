@@ -1,0 +1,95 @@
+html {
+  width: 100%;
+  height: 100%;
+  font-family: 'Fantasy', Calibri, Arial, sans-serif;
+  background: url(images/stock-vector.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+h1 {
+  background: #ffffff;
+  background-image: linear-gradient(-20deg, #616161 0%, #9bc5c3 100%);
+  /*background: -moz-linear-gradient(-20deg, #616161 0%, #9bc5c3 100%);*/
+  /*background: -webkit-linear-gradient(-20deg, #616161 0%, #9bc5c3 100%);*/
+  /*background: -o-linear-gradient(-20deg, #616161 0%, #9bc5c3 100%);*/
+  color: #868f96;
+  text-shadow: 3px 3px 4px #cccccc;
+  font-weight: bold;
+  padding: 20px;
+  margin: 0;
+  font-size: 4rem;
+  width: 100%;
+  height: 100%;
+}
+
+ form {
+  /*margin: 20px;*/
+  min-width: 500px;
+  align-items: center;
+  /*position: absolute;*/
+  /*top: 40px;*/
+  /*left: 30px;*/
+  float: left;
+  /*clear: both;*/
+}
+
+table {
+ 	/*border: 2px solid #2F4F4F;*/
+  width: 100%;
+  align-items: center;
+  margin-top: 50px;
+  margin-right: 20px;
+}
+
+
+input {
+  width: 100%;
+  color: #2F4F4F;
+  border-radius: 10px;
+  /*margin: 1%;*/
+  font-size: 1em;
+  height: 2em;
+  font-weight: bold;
+}
+
+input:hover {
+   	color: #ffffff;
+   	background-color: #b0bfba;
+  	}
+
+td {
+  height: 30px;
+  width: 70px;
+  padding: 2%;
+  }
+
+#contain input {
+  width: 100%;
+  text-align: right;
+  padding-right: 2%;
+  font-weight: bold;
+}
+
+
+.action {
+  background-color: #eda48a;
+}
+
+input:focus {
+  outline: none;
+}
+
+#chain {
+  font-size: 1.26rem;
+  height: 1.26rem;
+  padding-top: 0.5rem;
+}
+
+.broken {
+  animation: broken 2s;
+  transform: translate3d(0,-2000px,0);
+  opacity: 0;
+}
