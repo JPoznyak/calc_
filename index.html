@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Calculator</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="calc.css">
+</head>
+<body>
+<header class="text-center">
+    <h1>My calculator</h1>
+</header>
+
+    <div class="container">
+
+    <form name="calc" action="">
+        <table cellpadding=0 cellspacing=0 align="center">
+            <p class="chain"></p>
+            <tr>
+                <td id="contain" colspan=4 align="middle">
+                    <input type="text" id="ReadOut" value="0"/>
+                </td>
+            </tr>
+            <tr>
+                <td ><input name="btnClear" type="Button"
+                            value="C" onclick="clearDisplay()"/></td>
+                <td><input name="btnNeg" type="button"
+                           value="+/-" onclick="negValue()"/></td>
+                <td><input name="btnPercent" type="Button"
+                           value="%" onclick="Percent()"/></td>
+                <td><input class="action" name="btnDivide" type="Button"
+                           value=" / " onclick="setOperation('/')"/></td>
+            </tr>
+            <tr>
+                <td><input  type="Button"
+                           value="7" onclick="numPress(7)"></td>
+                <td><input name="btnEight" type="Button"
+                           value="8" onclick="numPress(8)"></td>
+                <td><input name="btnNine" type="Button"
+                           value="9" onclick="numPress(9)"></td>
+                <td><input class="action" name="btnMultiply" type="Button"
+                           value="*" onclick="setOperation('*')"/></td>
+            </tr>
+            <tr>
+                <td><input name="btnFour" type="Button"
+                           value="4" onclick="numPress(4)"></td>
+                <td><input name="btnFive" type="Button"
+                           value="5" onclick="numPress(5)"></td>
+                <td><input name="btnSix" type="Button"
+                           value="6" onclick="numPress(6)"></td>
+                <td><input class="action" name="btnMinus" type="Button"
+                           value="-" onclick="setOperation('-')"/></td>
+            </tr>
+            <tr>
+                <td><input name="btnOne" type="Button"
+                           value="1" onclick="numPress(1)"></td>
+                <td><input name="btnTwo" type="Button"
+                           value="2" onclick="numPress(2)"></td>
+                <td><input name="btnThree" type="Button"
+                           value="3" onclick="numPress(3)"></td>
+                <td><input class="action" name="btnPlus" type="Button"
+                           value="+" onclick="setOperation('+')" /></td>
+            </tr>
+            <tr>
+                <td colspan=2 align=middle><input name="btnZero" type="Button"
+                                                   value="0" onclick="numPress(0)"></td>
+                <td><input name="btnDecimal" type="Button"
+                           value="." onclick="pressDecimal()"></td>
+                <td><input class="action" name="btnEquals"   type="Button"
+                           value="=" onclick="setOperation('=')"></td>
+            </tr>
+        </table>
+    </form>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script type="text/javascript" src="calc.js"></script>
+
+</body>
+</html>
