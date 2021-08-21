@@ -79,7 +79,7 @@ function clearDisplay() {
  	secondNumber = "";
 }
 
-function pressDecimal(Num) {
+function pressDecimal() {
 	// десятичная доля
 	// 1. если поле ввода пустое или = 0 
 	// 2. если цифра введена
